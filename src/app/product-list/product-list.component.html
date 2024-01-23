@@ -22,4 +22,14 @@
   <div *ngFor="let item of listOfItems">
     <a href="">Current number of item is {{ item }}</a>
   </div>
+  <div class="test-div">
+    <a
+      href=""
+      [ngStyle]="{
+        backgroundColor: 'red',
+        color: listOfItems[0] == 'Sam' ? 'Green' : 'Black'
+      }"
+      >Test div</a
+    >
+  </div>
 </div>
